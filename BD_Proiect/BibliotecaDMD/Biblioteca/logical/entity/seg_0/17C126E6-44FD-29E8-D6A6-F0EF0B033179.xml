@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="17C126E6-44FD-29E8-D6A6-F0EF0B033179" name="Abonament">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 15:12:00 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Tip_Abonament" id="DC286B47-7475-CAC1-6DA0-0800E4BE3081">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 15:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valorile care pot fi date sunt : 
+Bronze/Silver/Gold/Platinum
+in functie de tipul de abonament ales]]></commentInRDBMS>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="Bronze" description="2 carti pe luna"/>
+<valueDef value="Gold" description="5 carti pe luna"/>
+<valueDef value="Platinum" description="8 carti pe luna / fara sanctiuni aplicabile"/>
+<valueDef value="Silver" description="4 carti pe luna"/>
+</listOfValues>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Pret" id="D3D5D3F0-F6D8-19FF-A1FA-A3A19325E3D2">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 15:15:35 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EACF1917-BC68-B08B-6FD7-59E7C4C5D5D7" name="Abonament PK">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 15:12:29 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="false"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DC286B47-7475-CAC1-6DA0-0800E4BE3081</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D2719B3D-D17D-E09D-D791-7AAD596AB843" name="Utilizatori">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>7217431A-B921-A4C3-4EC9-9176D592B91E</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Utilizator" id="BC31F4E9-3004-A9B2-F19D-8EC4AC53E198">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>9C878E53-9E9F-6692-BB47-059EADB35077</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nume" id="007C5850-491C-5620-00EA-C07DFDB94D4C">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>D95E1A86-D055-D9B3-94F7-96A7A3500273</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prenume" id="9808FDBF-AC71-1F79-E6D1-315C28117301">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>D22E25C8-F8AF-1316-391A-9F8B34BD1957</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="09A28B71-69FF-18A0-BF8C-EEA6794070A6">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>EF24AF95-7281-6660-B9FC-BCE8F92C156D</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<constraintName>utilizatori_Email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Parola" id="7D22D276-2154-4066-E407-B91FD2DC2A67">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>B04AF696-5D0F-FC91-2EA4-3F09C6BBA0FA</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<constraintName>utilizatori_Parola_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Parola, &apos;^.{5,}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Inscrierii" id="BC788CF9-AFFB-1183-462A-F80203D3A126">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datele valide vor fi de forma: xx.xx.xxxx]]></commentInRDBMS>
+<generatorID>B802C302-5261-5936-2366-8FDF955F306E</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<constraintName>utilizatori_data_inscrierii.ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Data_inscrierii,&apos;^(0?[1-9]|[12][0-9]|3[01])\.(0?[1-9]|1[0-2])\.(19|20)[0-9]{2}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tip_Abonament" id="592F457A-6C86-DDCC-756F-C2508062E229">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 15:39:16 UTC</createdTime>
+<generatorID>445F0CE9-B9D7-B9EC-319F-7A256A5F5293</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<referedAttribute>DC286B47-7475-CAC1-6DA0-0800E4BE3081</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6F135A84-2900-81DB-1D44-E1A4023308DD" name="Utilizatori PK">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>698AA29F-9D7A-785A-986F-CB0A9B4A4BDB</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="false"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BC31F4E9-3004-A9B2-F19D-8EC4AC53E198</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E816D4B7-2034-D798-FDB0-AA65FA57FEEC" name="Utilizatori_Email_UN">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>34CD7790-4722-1291-FEEC-9F3FF3E5CD40</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="false"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="false"/>
+</engineerTo>
+<newElementsIDs>09A28B71-69FF-18A0-BF8C-EEA6794070A6</newElementsIDs>
+<usedAttributes>
+<attributeRef>09A28B71-69FF-18A0-BF8C-EEA6794070A6</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0573C9E8-F372-409E-5F89-4553E663AE02" name="Utilizatori_ID_Utilizator_Parola_UN">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>B5F0780B-4838-9FB5-004B-46AEF03362A9</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="false"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="false"/>
+</engineerTo>
+<newElementsIDs>BC31F4E9-3004-A9B2-F19D-8EC4AC53E198,7D22D276-2154-4066-E407-B91FD2DC2A67</newElementsIDs>
+<usedAttributes>
+<attributeRef>BC31F4E9-3004-A9B2-F19D-8EC4AC53E198</attributeRef>
+<attributeRef>7D22D276-2154-4066-E407-B91FD2DC2A67</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

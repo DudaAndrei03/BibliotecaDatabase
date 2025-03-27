@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Imprumuturi_Utilizatori_FK" directorySegmentName="seg_0" id="79B8D6C1-A3CC-EBC1-E8E4-A309B0236B79">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:47:41 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<sourcePk>6F135A84-2900-81DB-1D44-E1A4023308DD</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>pot face</nameOnSource>
+<nameOnTarget>ale</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D2719B3D-D17D-E09D-D791-7AAD596AB843</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F09D7DDC-D288-3D25-FAC2-AAB081CC5DF5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

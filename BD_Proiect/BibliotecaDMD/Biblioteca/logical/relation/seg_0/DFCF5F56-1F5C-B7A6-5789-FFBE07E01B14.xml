@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Carti_Review_FK" directorySegmentName="seg_0" id="DFCF5F56-1F5C-B7A6-5789-FFBE07E01B14">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:06:53 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<sourcePk>CFA78358-77A2-237D-E71E-271EB52656CD</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>poate avea mai multe</nameOnSource>
+<nameOnTarget>pentru o</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1C124741-769F-C7C0-95FF-E1919CC1C2FA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>40B2DB37-5FF0-5FBB-F4C4-4488276FD63D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

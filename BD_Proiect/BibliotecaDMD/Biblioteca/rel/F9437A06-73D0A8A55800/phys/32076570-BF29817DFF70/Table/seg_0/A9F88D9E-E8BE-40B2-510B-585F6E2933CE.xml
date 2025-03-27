@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Sanctiuni" directorySegmentName="seg_0" id="A9F88D9E-E8BE-40B2-510B-585F6E2933CE">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Data_Inceput_Sanctiune" id="36B0D10A-74A3-E905-7584-9B53C14CC850">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Durata_Sanctiune" id="486E1C60-8C32-39BE-0377-05D30D0C3D03">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Sanctiune" id="4F05CBB9-1728-1F7A-CA45-0B58E75150C1">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Motiv" id="7FF18D05-801B-BB76-69E6-4BE014FEF4F9">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Utilizator" id="8BF8C56C-3684-87A4-315F-01827DA9910F">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="Sanctiuni__IDX" id="6A1B3917-AB33-12CF-9FD9-457EA387CFF2">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:01:45 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Sanctiuni_Utilizatori_FK" id="B80A6B58-6DA8-7B00-9979-423A76BB74E7">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Sanctiuni_PK" id="F87860B8-5D3A-2E5F-FD3A-010BD63B8258">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

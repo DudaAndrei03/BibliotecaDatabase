@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Imprumuturi_Data_Returnarii" directorySegmentName="seg_0" id="C88CC171-1422-56CD-5B94-8256960BBB36">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:50:54 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[/*BEGIN
+	IF( :new.Data_Returnarii > TRUNC(SYSDATE) ) --Data Curenta nu poate sa fie cu o zi in trecut!
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida: ' || TO_CHAR ( :new.Data_Returnarii, 'DD.MM.YYYY HH24:MI:SS' ) || 'trebuie sa fie mai mica decat data curenta.' );
+	END IF;
+END;*/]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>65311DF7-3AF3-3DCE-6D9A-2A8B4A2FD978</table>
+</TriggerOraclev10g>

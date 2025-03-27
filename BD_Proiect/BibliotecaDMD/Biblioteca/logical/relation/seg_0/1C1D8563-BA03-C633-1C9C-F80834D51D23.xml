@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Sanctiuni Utilizatori FK" directorySegmentName="seg_0" id="1C1D8563-BA03-C633-1C9C-F80834D51D23">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:48:32 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<sourcePk>6F135A84-2900-81DB-1D44-E1A4023308DD</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>pot avea</nameOnSource>
+<nameOnTarget>ale</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D2719B3D-D17D-E09D-D791-7AAD596AB843</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3C5E0AF8-49FF-AE5C-AE15-CB700AA101A4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

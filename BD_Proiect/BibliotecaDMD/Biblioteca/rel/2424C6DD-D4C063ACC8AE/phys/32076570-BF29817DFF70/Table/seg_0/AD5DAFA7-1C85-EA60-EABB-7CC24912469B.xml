@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Abonament" directorySegmentName="seg_0" id="AD5DAFA7-1C85-EA60-EABB-7CC24912469B">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Pret" id="436DF0AA-8B94-9550-0D3A-D0673AF03037">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Tip_Abonament" id="DDB15614-61E0-1C98-060D-E8B7BD8BAC53">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Abonament_PK" id="89F5B086-F226-D2E6-E55D-345C5B427AD1">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

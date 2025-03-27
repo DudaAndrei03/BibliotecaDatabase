@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="206CBFD2-6198-9D45-2C23-7D909966A7B1" name="Utilizatori">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>D2719B3D-D17D-E09D-D791-7AAD596AB843</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Utilizator" id="50C9D0A4-2302-CC0C-C924-8DE411A38C5B">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>BC31F4E9-3004-A9B2-F19D-8EC4AC53E198</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume" id="3F810A3C-8103-6C44-9C06-F8C58349F3E1">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>007C5850-491C-5620-00EA-C07DFDB94D4C</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prenume" id="F67FDB84-6B3B-1EFF-2E55-ACE871EF2421">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>9808FDBF-AC71-1F79-E6D1-315C28117301</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="8B782895-EB73-4472-0AD1-2970EE8A90F5">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>09A28B71-69FF-18A0-BF8C-EEA6794070A6</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<constraintName>utilizatori_Email_clk</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Parola" id="04D7C930-A6FD-39BF-FE65-4BA19BC063EE">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>7D22D276-2154-4066-E407-B91FD2DC2A67</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<constraintName>utilizatori_Parola_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Parola, &apos;^.{5,}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Inscrierii" id="6CA2A6EC-B2B3-689C-2A5B-8922A1E61B1B">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datele valide vor fi de forma: xx.xx.xxxx]]></commentInRDBMS>
+<generatorID>BC788CF9-AFFB-1183-462A-F80203D3A126</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<constraintName>utilizatori_data_inscrierii.ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Data_inscrierii,&apos;^(0?[1-9]|[12][0-9]|3[01])\.(0?[1-9]|1[0-2])\.(19|20)[0-9]{2}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tip_Abonament" id="BB2B5E97-852C-A8B1-CA38-0A742C04DA14">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>592F457A-6C86-DDCC-756F-C2508062E229</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4F2BCC3-29E6-0215-EAB8-D760044206DE" referredColumn="DDB15614-61E0-1C98-060D-E8B7BD8BAC53"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC139CEB-42C6-A562-A63B-491E3EF7B652" name="Utilizatori_PK">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>6F135A84-2900-81DB-1D44-E1A4023308DD</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50C9D0A4-2302-CC0C-C924-8DE411A38C5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6B81DC0-C7D0-C704-D7CB-156EADDF2C29" name="Utilizatori_Email_UN">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>E816D4B7-2034-D798-FDB0-AA65FA57FEEC</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B782895-EB73-4472-0AD1-2970EE8A90F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42E83907-A9CB-A72F-09C4-7D9A5799EF6A" name="ID_Utilizator_Parola_UN">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>0573C9E8-F372-409E-5F89-4553E663AE02</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50C9D0A4-2302-CC0C-C924-8DE411A38C5B"/>
+<colUsage columnID="04D7C930-A6FD-39BF-FE65-4BA19BC063EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31C3896D-ECC2-D955-11FB-6618ABFF68D1" name="Utilizatori_Abonament_FK">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>445F0CE9-B9D7-B9EC-319F-7A256A5F5293</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB2B5E97-852C-A8B1-CA38-0A742C04DA14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

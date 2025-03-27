@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Utilizatori" directorySegmentName="seg_0" id="206CBFD2-6198-9D45-2C23-7D909966A7B1">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Parola" id="04D7C930-A6FD-39BF-FE65-4BA19BC063EE">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nume" id="3F810A3C-8103-6C44-9C06-F8C58349F3E1">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Utilizator" id="50C9D0A4-2302-CC0C-C924-8DE411A38C5B">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data_Inscrierii" id="6CA2A6EC-B2B3-689C-2A5B-8922A1E61B1B">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Email" id="8B782895-EB73-4472-0AD1-2970EE8A90F5">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Tip_Abonament" id="BB2B5E97-852C-A8B1-CA38-0A742C04DA14">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Prenume" id="F67FDB84-6B3B-1EFF-2E55-ACE871EF2421">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Utilizatori_Abonament_FK" id="31C3896D-ECC2-D955-11FB-6618ABFF68D1">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Utilizatori_PK" id="AC139CEB-42C6-A562-A63B-491E3EF7B652">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="ID_Utilizator_Parola_UN" id="42E83907-A9CB-A72F-09C4-7D9A5799EF6A">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Utilizatori_Email_UN" id="E6B81DC0-C7D0-C704-D7CB-156EADDF2C29">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

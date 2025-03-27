@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD5DAFA7-1C85-EA60-EABB-7CC24912469B" name="Abonament">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>17C126E6-44FD-29E8-D6A6-F0EF0B033179</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Tip_Abonament" id="DDB15614-61E0-1C98-060D-E8B7BD8BAC53">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valorile care pot fi date sunt : 
+Bronze/Silver/Gold/Platinum
+in functie de tipul de abonament ales]]></commentInRDBMS>
+<generatorID>DC286B47-7475-CAC1-6DA0-0800E4BE3081</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="Bronze" description="2 carti pe luna"/>
+<valueDef value="Gold" description="5 carti pe luna"/>
+<valueDef value="Platinum" description="8 carti pe luna / fara sanctiuni aplicabile"/>
+<valueDef value="Silver" description="4 carti pe luna"/>
+</listOfValues>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pret" id="436DF0AA-8B94-9550-0D3A-D0673AF03037">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>D3D5D3F0-F6D8-19FF-A1FA-A3A19325E3D2</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89F5B086-F226-D2E6-E55D-345C5B427AD1" name="Abonament_PK">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>EACF1917-BC68-B08B-6FD7-59E7C4C5D5D7</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDB15614-61E0-1C98-060D-E8B7BD8BAC53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

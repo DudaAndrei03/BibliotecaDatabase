@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F09D7DDC-D288-3D25-FAC2-AAB081CC5DF5" name="Imprumuturi">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:42:42 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Imprumut" id="C92020D8-9785-B755-41A8-798057F6C4FE">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:43:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Imprumutului" id="6B600824-8706-C1D9-AD95-D03926BF3D78">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:44:05 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Returnarii" id="6E6B28DE-9199-DEEC-113B-12BF03D51AE1">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:44:19 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Statut" id="41B4DC52-B4D1-C503-619E-08EA032E02A8">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:44:56 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<constraintName>Imprumuturi_Statut_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<listOfValues>
+<valueDef value="0" description="Carte Imprumutata"/>
+<valueDef value="1" description="Carte Disponibila"/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Utilizator" id="68F4C808-20F2-7D59-1009-44EB9999DE15">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:47:41 UTC</createdTime>
+<generatorID>79B8D6C1-A3CC-EBC1-E8E4-A309B0236B79</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<referedAttribute>BC31F4E9-3004-A9B2-F19D-8EC4AC53E198</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Carte" id="A79D2AD3-3696-FECD-11CF-D5A26631CB19">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:54:08 UTC</createdTime>
+<generatorID>9E5378F5-AEC8-DCB8-6749-21749B3C95B3</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<referedAttribute>5AC33166-7F71-234F-5F9E-72508F2258A2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="93F2FC84-990C-DD20-1E33-3B93DA91C978" name="Imprumuturi_PK">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:43:59 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="false"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C92020D8-9785-B755-41A8-798057F6C4FE</newElementsIDs>
+<usedAttributes>
+<attributeRef>C92020D8-9785-B755-41A8-798057F6C4FE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

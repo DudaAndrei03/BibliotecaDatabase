@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9F88D9E-E8BE-40B2-510B-585F6E2933CE" name="Sanctiuni">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>3C5E0AF8-49FF-AE5C-AE15-CB700AA101A4</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Sanctiune" id="4F05CBB9-1728-1F7A-CA45-0B58E75150C1">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>28E7C71C-480B-77CC-CC44-490DEA34BE78</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Motiv" id="7FF18D05-801B-BB76-69E6-4BE014FEF4F9">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>D77CD79F-341C-5320-4CC9-EB77C2F8E3EB</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Durata_Sanctiune" id="486E1C60-8C32-39BE-0377-05D30D0C3D03">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>2EAEB105-580B-6C03-4FC6-802E98768DF5</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Inceput_Sanctiune" id="36B0D10A-74A3-E905-7584-9B53C14CC850">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>3EFF6C29-FEE3-03EF-6F2A-CDC2F8B84EA4</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Utilizator" id="8BF8C56C-3684-87A4-315F-01827DA9910F">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>24A0D6C4-3BF5-E265-E0DF-806DCB5718D7</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0FCDBBC-6705-5E98-F44A-A66E4F3ED2AD" referredColumn="4BA497D7-9982-81A2-C07A-37F7C6E75590"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F87860B8-5D3A-2E5F-FD3A-010BD63B8258" name="Sanctiuni_PK">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>E097C26C-98E4-2924-212D-0D9D4A91BE7E</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F05CBB9-1728-1F7A-CA45-0B58E75150C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A1B3917-AB33-12CF-9FD9-457EA387CFF2" name="Sanctiuni__IDX">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-07 18:31:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F05CBB9-1728-1F7A-CA45-0B58E75150C1"/>
+<colUsage columnID="8BF8C56C-3684-87A4-315F-01827DA9910F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B80A6B58-6DA8-7B00-9979-423A76BB74E7" name="Sanctiuni_Utilizatori_FK">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>1C1D8563-BA03-C633-1C9C-F80834D51D23</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BF8C56C-3684-87A4-315F-01827DA9910F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

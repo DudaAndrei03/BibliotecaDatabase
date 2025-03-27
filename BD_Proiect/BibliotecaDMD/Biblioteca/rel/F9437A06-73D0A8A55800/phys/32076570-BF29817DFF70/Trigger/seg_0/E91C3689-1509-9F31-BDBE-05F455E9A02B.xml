@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Sanctiuni_Data_Inceput_Sanctiune" directorySegmentName="seg_0" id="E91C3689-1509-9F31-BDBE-05F455E9A02B">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:49:31 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.Data_Inceput_Sanctiune > SYSDATE ) 
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida: ' || TO_CHAR ( :new.Data_Inceput_Sanctiune, 'DD.MM.YYYY HH24:MI:SS' ) || 'trebuie sa fie mai mica decat data curenta.' );
+	END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>A9F88D9E-E8BE-40B2-510B-585F6E2933CE</table>
+</TriggerOraclev10g>

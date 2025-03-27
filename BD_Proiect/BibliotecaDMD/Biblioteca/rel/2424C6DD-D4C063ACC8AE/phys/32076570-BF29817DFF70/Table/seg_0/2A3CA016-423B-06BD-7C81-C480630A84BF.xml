@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Review" directorySegmentName="seg_0" id="2A3CA016-423B-06BD-7C81-C480630A84BF">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_Carte" id="12F08C85-9F6E-D905-215C-1CB8D103BF4C">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nota" id="2BB1ED15-CA73-095C-BF19-F0EAFFEC484B">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Utilizator" id="5150A35D-DC64-0D95-7EC5-21266C26C889">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Opinie" id="82C6561F-6917-45D4-7F5D-0138F3A39AEF">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Review" id="EA304549-5043-E830-C6F9-FBAFCA91CC58">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Utilizatori_Review_FK" id="934C849D-AF44-0697-773B-2C1076D5663B">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Carti_Review_FK" id="D9570B40-2B10-FC34-C51D-1CC08880FF70">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Review_PK" id="8992127F-79F9-13F0-168A-6C1CA9BA1367">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:49:10 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

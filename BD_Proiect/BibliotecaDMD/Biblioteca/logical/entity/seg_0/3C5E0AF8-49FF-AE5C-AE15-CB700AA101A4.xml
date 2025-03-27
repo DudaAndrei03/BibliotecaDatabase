@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3C5E0AF8-49FF-AE5C-AE15-CB700AA101A4" name="Sanctiuni">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:42:57 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Sanctiune" id="28E7C71C-480B-77CC-CC44-490DEA34BE78">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:45:56 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Motiv" id="D77CD79F-341C-5320-4CC9-EB77C2F8E3EB">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:46:12 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Durata_Sanctiune" id="2EAEB105-580B-6C03-4FC6-802E98768DF5">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:46:31 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Inceput_Sanctiune" id="3EFF6C29-FEE3-03EF-6F2A-CDC2F8B84EA4">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:46:45 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Utilizator" id="24A0D6C4-3BF5-E265-E0DF-806DCB5718D7">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:48:32 UTC</createdTime>
+<generatorID>1C1D8563-BA03-C633-1C9C-F80834D51D23</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<referedAttribute>BC31F4E9-3004-A9B2-F19D-8EC4AC53E198</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E097C26C-98E4-2924-212D-0D9D4A91BE7E" name="Sanctiuni_PK">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:46:06 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="false"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>28E7C71C-480B-77CC-CC44-490DEA34BE78</newElementsIDs>
+<usedAttributes>
+<attributeRef>28E7C71C-480B-77CC-CC44-490DEA34BE78</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

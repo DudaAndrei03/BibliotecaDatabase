@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29A66994-B521-4AC6-E4B1-309684026DC4" name="Carti">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>1C124741-769F-C7C0-95FF-E1919CC1C2FA</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Carte" id="7196923D-A970-7D33-1A0F-2A08259E30FE">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>5AC33166-7F71-234F-5F9E-72508F2258A2</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Titlu" id="C24CC139-0951-23E8-C5C2-8C3E50983B86">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>534E0BB8-A071-C44B-A8AE-F6034A455C69</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Autor" id="0127F742-E0C6-D30F-975E-80876BE26420">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>D0BA2319-4B6E-D682-7E90-17B3DF450D5B</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="An_publicare" id="8095522A-5D36-EFC4-0FB2-6910EE18D2D6">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>F7685992-5662-2584-F343-2AC99740368F</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Exemplare" id="A6AE4AE9-AD9E-1680-5F72-747396A49355">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>BEEC9926-EC82-07BF-D31E-AD746CFD096E</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3106C4B8-BAC6-8AB9-2CB7-8E404500D712" name="Carti_PK">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>CFA78358-77A2-237D-E71E-271EB52656CD</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7196923D-A970-7D33-1A0F-2A08259E30FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A406110-7514-7847-8D53-EAE9F6E02811" name="Carti_UN">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-10 18:04:38 UTC</createdTime>
+<generatorID>A0FDD1C3-F11F-E75F-9894-01A7506669AB</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C24CC139-0951-23E8-C5C2-8C3E50983B86"/>
+<colUsage columnID="0127F742-E0C6-D30F-975E-80876BE26420"/>
+<colUsage columnID="8095522A-5D36-EFC4-0FB2-6910EE18D2D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

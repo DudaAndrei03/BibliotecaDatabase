@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Imprumuturi" directorySegmentName="seg_0" id="65311DF7-3AF3-3DCE-6D9A-2A8B4A2FD978">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Statut" id="54C8159C-C945-75D8-2EB1-67A4CEAEC7B9">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data_Returnarii" id="604FE67C-0231-20F8-8168-930ABA705692">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Imprumut" id="7BD84928-A008-060A-9CD6-5FCE002DCA94">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Utilizator" id="7E7C00E4-32F9-B4B5-F579-CEBB1E15464A">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data_Imprumutului" id="98CEDE55-A6D5-5447-2F47-D22ACFA554A8">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Carte" id="FC25761C-7030-440C-E473-71610519A373">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="Imprumuturi__IDX" id="8090B00C-D9FB-BD53-653F-C30A6145CB63">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:01:45 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Imprumuturi_Carti_FK" id="07ADAE6B-82AA-5DEB-EC36-B7B30FF317A9">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Imprumuturi_Utilizatori_FK" id="87A11E52-95E4-224B-AE6B-A874DC27DADE">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Imprumuturi_PK" id="B7D3D343-060F-DB21-FD25-752EC15B0378">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-24 08:24:38 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Imprumuturi__UN" id="4396010A-D83F-FEE7-D065-30A209D3E714">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 12:22:19 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

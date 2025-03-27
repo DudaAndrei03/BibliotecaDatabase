@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Imprumuturi_Carti_FK" directorySegmentName="seg_0" id="9E5378F5-AEC8-DCB8-6749-21749B3C95B3">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:54:08 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<sourcePk>CFA78358-77A2-237D-E71E-271EB52656CD</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>pot fi</nameOnSource>
+<nameOnTarget>ale</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1C124741-769F-C7C0-95FF-E1919CC1C2FA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F09D7DDC-D288-3D25-FAC2-AAB081CC5DF5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

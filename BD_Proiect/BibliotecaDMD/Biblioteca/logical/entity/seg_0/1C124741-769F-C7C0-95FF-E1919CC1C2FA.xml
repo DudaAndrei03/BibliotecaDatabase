@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C124741-769F-C7C0-95FF-E1919CC1C2FA" name="Carti">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>09BC11BC-80C7-2930-B356-4B20292F8CCB</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Carte" id="5AC33166-7F71-234F-5F9E-72508F2258A2">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>92A04374-DBCA-D2F5-8732-4841E0BE967B</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Titlu" id="534E0BB8-A071-C44B-A8AE-F6034A455C69">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>38C801BC-C605-72EB-FBDA-099978C94AE7</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Autor" id="D0BA2319-4B6E-D682-7E90-17B3DF450D5B">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>65ABEC63-7DE7-AD79-41BE-1F32DCA7C1F7</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="An_publicare" id="F7685992-5662-2584-F343-2AC99740368F">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>920D29E3-182C-BB7A-9AB3-60F1013A0F9B</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Exemplare" id="BEEC9926-EC82-07BF-D31E-AD746CFD096E">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>C1D93160-C89C-C4A3-5343-0D14E7C269BC</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CFA78358-77A2-237D-E71E-271EB52656CD" name="Carti PK">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>578E1C7B-6407-2982-3D66-960C74B51FCA</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="false"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5AC33166-7F71-234F-5F9E-72508F2258A2</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A0FDD1C3-F11F-E75F-9894-01A7506669AB" name="Carti_UN">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 14:14:30 UTC</createdTime>
+<generatorID>0EB6F565-363D-2B49-8E10-BD042D444F4D</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="false"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="false"/>
+</engineerTo>
+<newElementsIDs>534E0BB8-A071-C44B-A8AE-F6034A455C69,D0BA2319-4B6E-D682-7E90-17B3DF450D5B,F7685992-5662-2584-F343-2AC99740368F</newElementsIDs>
+<usedAttributes>
+<attributeRef>534E0BB8-A071-C44B-A8AE-F6034A455C69</attributeRef>
+<attributeRef>D0BA2319-4B6E-D682-7E90-17B3DF450D5B</attributeRef>
+<attributeRef>F7685992-5662-2584-F343-2AC99740368F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

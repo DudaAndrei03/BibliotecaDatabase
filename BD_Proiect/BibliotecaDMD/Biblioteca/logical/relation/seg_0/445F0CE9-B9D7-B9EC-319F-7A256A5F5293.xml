@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Utilizatori_Abonament_FK" directorySegmentName="seg_0" id="445F0CE9-B9D7-B9EC-319F-7A256A5F5293">
+<createdBy>andre</createdBy>
+<createdTime>2024-11-08 15:39:16 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="2424C6DD-E5B0-6146-F10B-D4C063ACC8AE" value="true"/>
+<item key="F9437A06-25F0-49E5-FF9A-73D0A8A55800" value="true"/>
+</engineerTo>
+<sourcePk>EACF1917-BC68-B08B-6FD7-59E7C4C5D5D7</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>al</nameOnSource>
+<nameOnTarget>au</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>17C126E6-44FD-29E8-D6A6-F0EF0B033179</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D2719B3D-D17D-E09D-D791-7AAD596AB843</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

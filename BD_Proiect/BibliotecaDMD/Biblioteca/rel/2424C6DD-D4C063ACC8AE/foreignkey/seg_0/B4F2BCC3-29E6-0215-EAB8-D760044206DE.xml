@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B4F2BCC3-29E6-0215-EAB8-D760044206DE" containerWithKeyObject="206CBFD2-6198-9D45-2C23-7D909966A7B1" localFKIndex="31C3896D-ECC2-D955-11FB-6618ABFF68D1" name="Utilizatori_Abonament_FK">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 10:48:27 UTC</createdTime>
+<generatorID>445F0CE9-B9D7-B9EC-319F-7A256A5F5293</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<referredTableLongName>Abonament</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AD5DAFA7-1C85-EA60-EABB-7CC24912469B</referredTableID>
+<keyObject>89F5B086-F226-D2E6-E55D-345C5B427AD1</keyObject>
+<referredKeyID>89F5B086-F226-D2E6-E55D-345C5B427AD1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Tip_Abonament</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

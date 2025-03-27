@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_EXEMPLARE_OK" directorySegmentName="seg_0" id="210B5B67-5DBA-08ED-B7B6-6245313995E9">
+<createdBy>andre</createdBy>
+<createdTime>2024-12-31 12:10:33 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+    v_exemplare NUMBER;  -- Variabilă pentru a stoca numărul de exemplare
+BEGIN
+    -- Obține numărul de exemplare din tabela carti pentru cartea împrumutată
+    SELECT exemplare
+    INTO v_exemplare
+    FROM carti
+    WHERE id_carte = :NEW.id_carte;
+
+    -- Verifică dacă sunt exemplare disponibile
+    IF v_exemplare > 0 THEN
+        -- Actualizează tabela carti, scăzând un exemplar
+        UPDATE carti
+        SET exemplare = exemplare - 1
+        WHERE id_carte = :NEW.id_carte;
+    ELSE
+        -- Dacă nu sunt exemplare disponibile, aruncă o eroare
+        RAISE_APPLICATION_ERROR(-20001, 'Nu mai sunt exemplare disponibile pentru această carte.');
+    END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>65311DF7-3AF3-3DCE-6D9A-2A8B4A2FD978</table>
+</TriggerOraclev10g>
